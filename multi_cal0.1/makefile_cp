@@ -1,0 +1,24 @@
+# Makefile for none
+# Copyright (C) 2012 Shuangliang Zhao <shuangliang.zhao@gmail.com>
+# $Header$
+# $Log$
+
+FC = ifort  
+CC = gcc
+CFLAGS = -g -fomit-frame-pointer -ffast-math -O3 -mpentiumpro -s
+
+
+OBJS =  ADFT.o fft3-public.o fft_back.o fft_forward.o fft_setup.o\
+	pub3d.o get_fftdims.o dblas.o fft_backward.o temps.o\
+	Compute_Torrence.o sysdef.o Compute_initial_rho.o  \
+        Compute_Vext.o Compute_DCFs.o Compute_new_rho.o Compute_Vint.o \
+        Compute_bridge.o Compute_Intra_Factor.o Get_cos_table.o
+
+
+SRCS = $(OBJS:.o=.f)
+
+all: $(OBJS)
+	$(FC) -o dft $(OBJS)
+
+clean:
+	rm -f $(OBJS) dft

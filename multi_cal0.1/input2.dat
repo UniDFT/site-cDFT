@@ -1,0 +1,58 @@
+Box size(Angstrom), Picard iteration weight, IVIN (0, 1 for not or yes of accouting Vint)
+32.0        0.95         1 
+Number of grid point
+256  256   256    ! this program should be run with small resolution eg: nfft = 500         
+Option of including bridge term ( 1 for include, and 0 for not include), ratio  (iteration trick)
+ 0             1.0       
+Number of solvent site
+3
+charge   sigma(A) epsilon(KJ/mol)    x          y       z
+-0.8476    3.166    0.65           0.0         0.0     0.0 
+0.4238     0.0      0.0            0.816495    0.0     0.5773525
+0.4238     0.0      0.0           -0.816495    0.0     0.5773525 
+************** CHANGE INPUT BELOW **************************
+XYZ correction
+0.0      0.0    0.0
+Type of LJ potential
+8
+atom1 atom2 sigma epsilon
+1    1   2.6      3.166
+1    3   1.142    2.833
+1    4   1.695    3.333
+1    5   1.695    3.333
+1    6   1.695    3.333
+1    7   2.720    3.233
+1    8   0.000    1.583 
+1    9   0.808    2.833
+Number of solvent site 
+16
+atom      x       y       z       mass    charge  kind
+3       0.659   0.800   1.225     1.008   0.0600  H 
+4       0.054  -0.109   1.252    12.011  -0.1800  C
+3       0.700  -0.949   1.513     1.008   0.0600  H
+3      -0.710   0.005   2.024     1.008   0.0600  H
+5      -0.603  -0.340  -0.127    12.011  -0.1200  C 
+3      -1.218   0.531  -0.370     1.008   0.0600  H
+3       0.187  -0.420  -0.879     1.008   0.0600  H
+5      -1.483  -1.619  -0.167    12.011  -0.1200  C
+3      -0.865  -2.487   0.078     1.008   0.0600  H 
+3      -2.270  -1.537   0.588     1.008   0.0600  H
+6      -2.139  -1.848  -1.549    12.011   0.0600  C
+9      -1.369  -1.953  -2.317     1.008   0.0600  H
+9      -2.780  -1.002  -1.807     1.008   0.0600  H 
+7      -2.952  -3.070  -1.536    14.007  -0.9000  N
+8      -3.708  -2.925  -0.863     1.008   0.3600  H
+8      -3.388  -3.153  -2.457     1.008   0.3600  H
+Grid zones           Bulk cutoff
+2                     14.0
+Grid size            Starting from
+2                     10.0
+4                     12.0
+Frequency zones      
+1
+Frequency            Starting from
+2                     14.0
+
+-0.8476    3.166    0.65           0.0         0.0     0.0 
+0.4238     0.0      0.0            0.816495    0.0     0.5773525
+0.4238     0.0      0.0           -0.816495    0.0     0.5773525 

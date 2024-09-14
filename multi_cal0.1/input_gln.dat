@@ -1,0 +1,56 @@
+Box size(Angstrom), Picard iteration weight, IVIN (0, 1 for not or yes of accouting Vint)
+32.0        0.95         1 
+Number of grid point
+128  128   128    ! this program should be run with small resolution eg: nfft = 500         
+Option of including bridge term ( 1 for include, and 0 for not include), ratio  (iteration trick)
+ 0             1.0       
+Number of solvent site
+3
+charge   sigma(A) epsilon(KJ/mol)    x          y       z
+-0.8476    3.166    0.65           0.0         0.0     0.0 
+0.4238     0.0      0.0            0.816495    0.0     0.5773525
+0.4238     0.0      0.0           -0.816495    0.0     0.5773525 
+************** CHANGE INPUT BELOW **************************
+XYZ correction
+-1.542  -1.764  -0.635
+Type of LJ potential
+8
+atom1 atom2 epsilon sigma
+1    1   2.6      3.166
+1    3   1.142    2.833
+1    4   1.695    3.333
+1    5   1.695    3.333
+1    6   2.138    3.458
+1    7   3.023    3.063
+1    8   2.720    3.208
+1    9   0.000    1.583
+Number of solvent site 
+12
+atom      x      y      z      mass     charge       kind
+3       0.295   0.708   0.917     1.008   0.0600  H
+4      -0.292  -0.213   0.907    12.011  -0.1800  C
+3      -1.147  -0.085   1.574     1.008   0.0600  H
+3       0.333  -1.027   1.281     1.008   0.0600  H
+5      -0.764  -0.513  -0.534    12.011  -0.1200  C
+3       0.116  -0.575  -1.180     1.008   0.0600  H
+3      -1.381   0.314  -0.892     1.008   0.0600  H
+6      -1.542  -1.764  -0.635    12.011   0.5000  C
+7      -1.122  -2.731  -1.307    15.999  -0.5000  O
+8      -2.727  -1.906  -0.023    14.007  -0.7600  N
+9      -3.097  -1.182   0.506     1.008   0.3800  H
+9      -3.213  -2.740  -0.113     1.008   0.3800  H
+Grid zones           Bulk cutoff
+4                     12.0
+Grid size            Starting from
+2                     6.0
+4                     8.0
+8                     10.0
+16                    12.0
+Frequency zones      
+1
+Frequency            Starting from
+2                     14.0
+
+-0.8476    3.166    0.65           0.0         0.0     0.0 
+0.4238     0.0      0.0            0.816495    0.0     0.5773525
+0.4238     0.0      0.0           -0.816495    0.0     0.5773525 

@@ -1,0 +1,34 @@
+Box size(Angstrom), Picard iteration weight, IVIN (0, 1 for not or yes of accouting Vint)
+32.0        0.95         1 
+Number of grid point
+128  128   128    ! this program should be run with small resolution eg: nfft = 500         
+Option of including bridge term ( 1 for include, and 0 for not include), ratio  (iteration trick)
+ 1             1.0       
+Number of solvent site
+3
+charge   sigma(A) epsilon(KJ/mol)    x          y       z
+-0.8476    3.166    0.65           0.0         0.0     0.0 
+0.4238     0.0      0.0            0.816495    0.0     0.5773525
+0.4238     0.0      0.0           -0.816495    0.0     0.5773525 
+************** CHANGE INPUT BELOW **************************
+XYZ correction
+-1.379      0.805    0.122
+Number of solvent site 
+5
+Charge    sigma  epsilon    x          y       z
+0.06       2.5   0.1254   -0.489      0.196    -0.038       ! H
+-0.24      3.5   0.2763   -1.379      0.805    0.122        ! C
+0.06       2.5   0.1254   -2.268      0.183    0.022       ! H
+0.06       2.5   0.1254   -1.41       1.605    -0.619       ! H
+0.06       2.5   0.1254   -1.349      1.238    1.122       ! H
+Grid zones           Bulk cutoff
+4                     12.0
+Grid size            Starting from
+2                     6.0
+4                     8.0
+8                     10.0
+16                    12.0
+Frequency zones      
+1
+Frequency            Starting from
+2                     14.0
